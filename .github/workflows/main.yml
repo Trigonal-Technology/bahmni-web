@@ -74,7 +74,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           file: package/docker/Dockerfile
           push: true
-          tags: liferythem/bahmni-web:${{ env.ARTIFACT_VERSION }},liferythem/bahmni-web:latest
+          tags: thanksdoc/bahmni-web:${{ env.ARTIFACT_VERSION }},thanksdoc/bahmni-web:latest
       # - name: Update Version and Image Tag
       #   run: |
       #     yq --inplace '.image.tag = "${{ env.ARTIFACT_VERSION }}"' $HELM_CHART_PATH/values.yaml
